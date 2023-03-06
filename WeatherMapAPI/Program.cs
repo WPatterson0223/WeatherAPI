@@ -16,7 +16,7 @@ class Program
 
         var weatherMap = JObject.Parse(weatherMapResponse);
 
-        Console.WriteLine(weatherMap["main"]);
+        Console.WriteLine($"It is {weatherMap["main"]["temp"]} degrees in Lexington.");
     }
 }
 
